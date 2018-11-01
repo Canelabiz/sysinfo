@@ -1,7 +1,8 @@
 import os, csv
 from typing import List, Any
 
-dir = os.path.join('C:\\Users\\frago\\Desktop\\DxDiag')
+home = os.path.expanduser('~')
+dir = os.path.join(home, 'Desktop\\DxDiag')
 files = os.listdir(dir)
 
 for filename in files:
